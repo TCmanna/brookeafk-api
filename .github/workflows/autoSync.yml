@@ -3,6 +3,7 @@ name: Sync Fork
 on:
   schedule:
     - cron: '*/30 * * * *'
+  workflow_dispatch:
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
