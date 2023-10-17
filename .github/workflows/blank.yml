@@ -1,0 +1,15 @@
+name: Sync Fork
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: tgymnich/fork-sync@v1.8
+        with:
+          token: ${{ secrets.TOKEN }}
+          owner: BrookeAFK
+          head: master
+          base: master
