@@ -12,5 +12,5 @@ jobs:
         with:
           token: ${{ secrets.TOKEN }}
           owner: BrookeAFK
-          head: master
-          base: master
+          head: main
+          base: main
