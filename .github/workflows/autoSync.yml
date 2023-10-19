@@ -7,6 +7,8 @@ on:
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
+    strategy: 
+      fail-fast: false
     steps:
       - uses: tgymnich/fork-sync@v1.8
         with:
