@@ -19,7 +19,7 @@ jobs:
     name: A demo job to delete workflow runs
     steps:
       - name: Delete workflow runs
-        uses: MajorScruffy/delete-old-workflow-runs@v0.2.0
+        uses: MajorScruffy/delete-old-workflow-runs@v0.3.0
         with:
           repository: TCmanna/brookeafk-api
           older-than-seconds: 86400
