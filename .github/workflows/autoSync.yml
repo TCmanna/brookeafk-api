@@ -14,6 +14,7 @@ jobs:
           owner: BrookeAFK
           head: main
           base: main
+          ignore_fail: true
   delete-workflow-runs:
     runs-on: ubuntu-latest
     name: A demo job to delete workflow runs
