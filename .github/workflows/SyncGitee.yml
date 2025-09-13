@@ -1,8 +1,6 @@
 name: Sync Github Repos To Gitee
 
 on: 
-  schedule:
-    - cron: '* */6 * * *'
   push:
     branches: [ main ]
   workflow_dispatch:
